@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.parallax::-webkit-scrollbar{
+display: none;
+}
+
 .parallax-layer{
     position:absolute;
     left: 0;
@@ -22,6 +26,28 @@
     height: 56.25vw;
 }
 
+.flask1{
+    background-image: url("../img/flask1.png");
+    width: 11.7vw;
+    height: 17.7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 68%;
+    left: 8%;
+    z-index: 2;
+}
+
+.flask2{
+    background-image: url("../img/flask2.png");
+    width: 8vw;
+    height: 13.4vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 75%;
+    left: 20.5%;
+    z-index: 2;
+}
+
 .flask3{
     background-image: url("../img/flask3.png");
     width: 11.35vw;
@@ -33,8 +59,37 @@
     z-index: 2;
 }
 
+.flask4{
+    background-image: url("../img/flask4.png");
+    width: 4.3vw;
+    height: 13vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 76%;
+    left: 70%;
+    z-index: 2;
+}
 .space{
     height: 200vh;
+}
+
+.plug1{
+    background-image: url("../img/plug1.png");
+    width: 3.12vw;
+    height: 2.08vw;
+    background-size: contain;
+    top: 37.55vw;
+    left: 12.4vw;
+    z-index: 1;
+}
+.plug2{
+    background-image: url("../img/plug2.png");
+    width: 2.34vw;
+    height: 1.71vw;
+    background-size: contain;
+    top: 41.82vw;
+    left: 23.43vw;
+    z-index: 1;
 }
 
 .plug3{
@@ -46,9 +101,36 @@
     left: 53.75vw;
     z-index: 1;
 }
+.plug4{
+    background-image: url("../img/plug4.png");
+    width: 2.18vw;
+    height: 1.61vw;
+    background-size: contain;
+    top: 42.18vw;
+    left: 71vw;
+    z-index: 1;
+}
 
-.plugs-container {
+.plugs-container-slow {
+    transform: translateZ(2px) scale(0.6);
+    z-index: 1;
+    width: 100%;
+}
+
+.plugs-container-very-fast {
+    transform: translateZ(3.5px) scale(0.3);
+    z-index: 1;
+    width: 100%;
+}
+
+.plugs-container-fast {
     transform: translateZ(3px) scale(0.4);
+    z-index: 1;
+    width: 100%;
+}
+
+.plugs-container-very-slow {
+    transform: translateZ(1px) scale(0.8);
     z-index: 1;
     width: 100%;
 }
