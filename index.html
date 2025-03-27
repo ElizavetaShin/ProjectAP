@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProjectAP</title>
     <link rel="stylesheet" href="stylesheets/style.css"/>
-    <script src="javascript/index.js"></script>
+   
 
 </head>
 <body>
@@ -34,8 +34,10 @@
             </div>
         </div>
 
-        <div class="parallax-layer wardrobe">
-            
+        <div class="wardrobe">
+            <button class="hint-button" id="hint-button-screen1">
+
+            </button>
             <div class="parallax-layer flask1">
 
             </div>
@@ -49,12 +51,98 @@
             <div class="parallax-layer flask4">
 
             </div>
-        </div>
+             <!-- Далее предметы на полках -->
 
-        <div class="parallax-layer space">
+             <div id="bottle-with-powder" class="bottle-with-powder draggable-object" draggable="true">
+
+             </div>
+
+             <div id="two-bottles" class="two-bottles draggable-object" draggable="true">
+
+            </div>
+
+             <div id="wooden-box" class="wooden-box draggable-object" draggable="true">
+
+            </div>
+
+            <div id="empty-bottle" class="empty-bottle draggable-object" draggable="true">
+
+            </div>
+
+            <div id="opaque-bottle" class="opaque-bottle draggable-object" draggable="true">
+
+            </div>
+
+            <div id="tv-box" class="tv-box draggable-object" draggable="true">
+
+            </div>
+    
+            
+            
+         <!-- Далее тени на полках -->
+
+             <div id="shadow-of-two-bottles" class="shadow-of-two-bottles">
+
+             </div>
+
+             <div id="shadow-of-bottle-with-powder" class="shadow-of-bottle-with-powder">
+                
+              </div>
+
+             <div id="shadow-of-wooden-box" class="shadow-of-wooden-box">
+                
+             </div>
+
+             <div id="shadow-of-empty-bottle" class="shadow-of-empty-bottle">
+                
+             </div>
+
+             <div id="shadow-of-opaque-bottle" class="shadow-of-opaque-bottle">
+                
+             </div>
+
+             <div id="shadow-of-tv-box" class="shadow-of-tv-box">
+                
+             </div>
+
 
         </div>
+        <div class="divider">
+
+        </div>
+        <div class="screen2">
+            <button class="hint-button" id="hint-button-screen2">
+
+            </button>
+        </div>
+        <div class="divider">
+
+        </div>
+        <div class="screen3">
+            <button class="hint-button" id="hint-button-screen3">
+
+            </button>
+        </div>
+        <div class="divider">
+
+        </div>
+        <div class="screen4">
+            <button class="hint-button" id="hint-button-screen4">
+
+            </button>
+        </div>
+        
 
     </div>
+
+
+    <div class="opaque-popup-background" id="popup-background"> 
+        <div class="popup" id="popup">
+                <button class="popup-close-button" id="popup-close-button">
+
+                </button>
+        </div>
+    </div>
+    <script src="javascript/index.js"></script>
 </body>
 </html>

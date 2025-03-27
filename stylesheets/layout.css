@@ -24,6 +24,8 @@ display: none;
     background-size: cover;
     width: 100vw;
     height: 56.25vw;
+    position: relative;
+    z-index: 100;
 }
 
 .flask1{
@@ -34,7 +36,7 @@ display: none;
     background-size: contain;
     top: 68%;
     left: 8%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .flask2{
@@ -45,7 +47,7 @@ display: none;
     background-size: contain;
     top: 75%;
     left: 20.5%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .flask3{
@@ -56,7 +58,7 @@ display: none;
     background-size: contain;
     top: 76%;
     left: 49%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .flask4{
@@ -67,7 +69,7 @@ display: none;
     background-size: contain;
     top: 76%;
     left: 70%;
-    z-index: 2;
+    z-index: 4;
 }
 .space{
     height: 200vh;
@@ -75,12 +77,13 @@ display: none;
 
 .plug1{
     background-image: url("../img/plug1.png");
-    width: 3.12vw;
-    height: 2.08vw;
+    width: 3.33vw;
+    height: 2.96vw;
     background-size: contain;
-    top: 37.55vw;
-    left: 12.4vw;
-    z-index: 1;
+    top: 37vw;
+    left: 12.3vw;
+    z-index: 100;
+    background-repeat: no-repeat;
 }
 .plug2{
     background-image: url("../img/plug2.png");
@@ -90,6 +93,7 @@ display: none;
     top: 41.82vw;
     left: 23.43vw;
     z-index: 1;
+    background-repeat: no-repeat;
 }
 
 .plug3{
@@ -100,6 +104,7 @@ display: none;
     top: 42.3vw;
     left: 53.75vw;
     z-index: 1;
+    background-repeat: no-repeat;
 }
 .plug4{
     background-image: url("../img/plug4.png");
@@ -109,28 +114,288 @@ display: none;
     top: 42.18vw;
     left: 71vw;
     z-index: 1;
+    background-repeat: no-repeat;
 }
 
 .plugs-container-slow {
     transform: translateZ(2px) scale(0.6);
-    z-index: 1;
+    z-index: 3;
     width: 100%;
 }
 
 .plugs-container-very-fast {
     transform: translateZ(3.5px) scale(0.3);
-    z-index: 1;
+    z-index: 3;
     width: 100%;
 }
 
 .plugs-container-fast {
     transform: translateZ(3px) scale(0.4);
-    z-index: 1;
+    z-index: 3;
     width: 100%;
 }
 
 .plugs-container-very-slow {
     transform: translateZ(1px) scale(0.8);
-    z-index: 1;
+    z-index: 3;
     width: 100%;
 }
+
+
+
+
+
+/* Предметы */
+
+.two-bottles{
+    background-image: url("../img/bottle3.png");
+    width: 6.25vw;
+    height: 6.20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 23%;
+    left: 13%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.bottle-with-powder{
+    background-image: url("../img/bottle1.png");
+    width: 5.41vw;
+    height: 7.65vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 3%;
+    left: 35%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.wooden-box{
+    background-image: url("../img/box.png");
+    width: 10.36vw;
+    height: 8.90vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 38%;
+    left: 35%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.empty-bottle{
+    background-image: url("../img/bottle2.png");
+    width: 4.21vw;
+    height: 8.22vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 2%;
+    left: 83%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.opaque-bottle{
+    background-image: url("../img/bottle4.png");
+    width: 6.09vw;
+    height: 7.44vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 41.60%;
+    left: 54.27%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.tv-box{
+    background-image: url("../img/tv.png");
+    width: 11.61vw;
+    height: 7.70vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 20%;
+    left: 52.65%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+
+
+/* Тени */
+
+.shadow-of-two-bottles{
+    background-image: url("../img/shadow3.png");
+    width: 7.39vw;
+    height: 6.82vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 4%;
+    left: 15%;
+    z-index: 2;
+    position: absolute;
+}
+
+.shadow-of-bottle-with-powder{
+    background-image: url("../img/shadow1.png");
+    width: 6.2vw;
+    height: 8.18vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 19.4%;
+    left: 37.6%;
+    z-index: 2;
+    position: absolute;
+}
+
+.shadow-of-wooden-box{
+    background-image: url("../img/shadow\ box.png");
+    width: 10.83vw;
+    height: 9.32vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 37%;
+    left: 13%;
+    z-index: 2;
+    position: absolute;
+}
+
+.shadow-of-empty-bottle{
+    background-image: url("../img/shadow2.png");
+    width: 5.6vw;
+    height: 9vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0.5%;
+    left: 55%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.shadow-of-opaque-bottle{
+    background-image: url("../img/shadow4.png");
+    width: 6.66vw;
+    height: 7.91vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 19.72%;
+    left: 73%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.shadow-of-tv-box{
+    background-image: url("../img/shadow\ tv.png");
+    width: 12.70vw;
+    height: 8.38vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 38%;
+    left: 76%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+
+
+
+
+
+.screen2{
+    background-image: url('../img/background2.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+.screen3{
+    background-image: url('../img/background3.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+.screen4{
+    background-image: url('../img/background4.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+
+
+.divider{
+    width: 100vw;
+    height: 1vw;
+    background-color: rgb(68,58,47);
+}
+
+
+
+.opaque-popup-background{
+    position:fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(68,58,47,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+
+.popup{
+    width: 46.6vw; 
+    height: 27.2vw;
+    background-image: url('../img/popup1.png');
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.popup-close-button{
+    background-image: url('../img/close-button.png');
+    width: 3.85vw;
+    height: 3.43vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    right: -1%;
+    top: 0%;
+    border: none;
+    background-color: transparent;
+}
+
+.hint-button{
+    background-image: url('../img/question.png');
+    width: 3.54vw;
+    height: 3.54vw;
+    position:absolute;
+    top: 2.22%;
+    right: 1.25%;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+
+
