@@ -7,7 +7,7 @@
 }
 
 .parallax::-webkit-scrollbar{
-display: none;
+    display: none;
 }
 
 .parallax-layer{
@@ -25,50 +25,53 @@ display: none;
     width: 100vw;
     height: 56.25vw;
     position: relative;
-    z-index: 100;
 }
 
 .flask1{
     background-image: url("../img/flask1.png");
-    width: 11.7vw;
-    height: 17.7vw;
+    width: 12.13vw;
+    height: 17.81vw;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 68%;
-    left: 8%;
+    position:absolute;
+    top: 68.51%;
+    left: 10.83%;
     z-index: 4;
 }
 
 .flask2{
     background-image: url("../img/flask2.png");
-    width: 8vw;
-    height: 13.4vw;
+    width: 8.23vw;
+    height: 13.96vw;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 75%;
-    left: 20.5%;
+    position:absolute;
+    top: 74.17%;
+    left: 23.85%;
     z-index: 4;
 }
 
 .flask3{
     background-image: url("../img/flask3.png");
-    width: 11.35vw;
-    height: 13.4vw;
+    width: 11.72vw;
+    height: 13.8vw;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 76%;
-    left: 49%;
+    position:absolute;
+    top: 74.1%;
+    left: 47.34%;
     z-index: 4;
 }
 
 .flask4{
     background-image: url("../img/flask4.png");
-    width: 4.3vw;
-    height: 13vw;
+    width: 4.74vw;
+    height: 13.49vw;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 76%;
-    left: 70%;
+    position:absolute;
+    top: 73.24%;
+    left: 66.458%;
     z-index: 4;
 }
 .space{
@@ -80,40 +83,42 @@ display: none;
     width: 3.33vw;
     height: 2.96vw;
     background-size: contain;
-    top: 37vw;
-    left: 12.3vw;
-    z-index: 100;
+    top: 37.03vw;
+    left: 15.26vw;
+    z-index: 2;
     background-repeat: no-repeat;
 }
+
 .plug2{
     background-image: url("../img/plug2.png");
-    width: 2.34vw;
-    height: 1.71vw;
+    width: 2.7vw;
+    height: 2.45vw;
     background-size: contain;
-    top: 41.82vw;
-    left: 23.43vw;
-    z-index: 1;
+    top: 40.78vw;
+    left: 26.61vw;
+    z-index: 2;
     background-repeat: no-repeat;
 }
 
 .plug3{
     background-image: url("../img/plug3.png");
-    width: 1.82vw;
-    height: 1.3vw;
+    width: 2.97vw;
+    height: 2.6vw;
     background-size: contain;
-    top: 42.3vw;
-    left: 53.75vw;
-    z-index: 1;
+    top: 40.78vw;
+    left: 51.51vw;
+    z-index: 2;
     background-repeat: no-repeat;
 }
+
 .plug4{
     background-image: url("../img/plug4.png");
-    width: 2.18vw;
-    height: 1.61vw;
+    width: 2.13vw;
+    height: 2.13vw;
     background-size: contain;
-    top: 42.18vw;
-    left: 71vw;
-    z-index: 1;
+    top: 40.31vw;
+    left: 67.76vw;
+    z-index: 2;
     background-repeat: no-repeat;
 }
 
@@ -121,29 +126,29 @@ display: none;
     transform: translateZ(2px) scale(0.6);
     z-index: 3;
     width: 100%;
+    pointer-events: none;
 }
 
 .plugs-container-very-fast {
     transform: translateZ(3.5px) scale(0.3);
     z-index: 3;
     width: 100%;
+    pointer-events: none;
 }
 
 .plugs-container-fast {
     transform: translateZ(3px) scale(0.4);
     z-index: 3;
     width: 100%;
+    pointer-events: none;
 }
 
 .plugs-container-very-slow {
     transform: translateZ(1px) scale(0.8);
     z-index: 3;
     width: 100%;
+    pointer-events: none;
 }
-
-
-
-
 
 /* Предметы */
 
@@ -159,7 +164,6 @@ display: none;
     position: absolute;
 }
 
-
 .bottle-with-powder{
     background-image: url("../img/bottle1.png");
     width: 5.41vw;
@@ -171,7 +175,6 @@ display: none;
     z-index: 2;
     position: absolute;
 }
-
 
 .wooden-box{
     background-image: url("../img/box.png");
@@ -185,7 +188,6 @@ display: none;
     position: absolute;
 }
 
-
 .empty-bottle{
     background-image: url("../img/bottle2.png");
     width: 4.21vw;
@@ -197,7 +199,6 @@ display: none;
     z-index: 2;
     position: absolute;
 }
-
 
 .opaque-bottle{
     background-image: url("../img/bottle4.png");
@@ -211,7 +212,6 @@ display: none;
     position: absolute;
 }
 
-
 .tv-box{
     background-image: url("../img/tv.png");
     width: 11.61vw;
@@ -223,9 +223,6 @@ display: none;
     z-index: 2;
     position: absolute;
 }
-
-
-
 
 /* Тени */
 
@@ -277,7 +274,6 @@ display: none;
     position: absolute;
 }
 
-
 .shadow-of-opaque-bottle{
     background-image: url("../img/shadow4.png");
     width: 6.66vw;
@@ -289,7 +285,6 @@ display: none;
     z-index: 2;
     position: absolute;
 }
-
 
 .shadow-of-tv-box{
     background-image: url("../img/shadow\ tv.png");
@@ -303,11 +298,7 @@ display: none;
     position: absolute;
 }
 
-
-
-
-
-
+/* Экраны */
 
 .screen2{
     background-image: url('../img/background2.png') ;
@@ -334,9 +325,10 @@ display: none;
     width: 100vw;
     height: 56.25vw;
     position: relative;
+    overflow: hidden;
 }
 
-
+/* Разделитель */
 
 .divider{
     width: 100vw;
@@ -344,7 +336,7 @@ display: none;
     background-color: rgb(68,58,47);
 }
 
-
+/* Подсказки */
 
 .opaque-popup-background{
     position:fixed;
@@ -397,5 +389,294 @@ display: none;
     background-size: contain;
     z-index: 10;
 }
+
+
+/* 2 экран */
+
+.nails {
+    background-image: url("../img/nails.png");
+    width: 59.17vw;
+    height: 8.9vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 20.46%;
+    left: 17.7%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.big-mushroom {
+    background-image: url("../img/bigMushroom.png");
+    width: 14.95vw;
+    height: 18.7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 35%;
+    left: 11.67%;
+    z-index: 2;
+}
+
+.small-mushroom {
+    background-image: url("../img/smallMushroom.png");
+    width: 6.98vw;
+    height: 9.79vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 27%;
+    left: 32.135%;
+    z-index: 2;
+}
+
+.branch {
+    background-image: url("../img/branch.png");
+    width: 15.47vw;
+    height: 19.79vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 30.926%;
+    left: 69.896%;
+    z-index: 2;
+}
+
+.crystal {
+    background-image: url("../img/crystal.png");
+    width: 14.01vw;
+    height: 8.02vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 82.13%;
+    left: 72.71%;
+    z-index: 2;
+}
+
+.plate {
+    background-image: url("../img/plate.png");
+    width: 24.635vw;
+    height: 13.125vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 72.41%;
+    left: 4.896%;
+    z-index: 2;
+}
+
+.plate-area {
+    position: absolute;
+    width: 36vw;
+    height: 21vw;
+    left: 0;
+    bottom: 0;
+}
+
+.big-flask {
+    width: 23.75vw;
+    height: 37.45vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 25.28%;
+    left: 39%;
+    z-index: 2;
+}
+
+.big-flask-style-0 {
+    background-image: url("../img/bigFlask0.png");
+}
+
+.big-flask-style-1 {
+    background-image: url("../img/bigFlask1.png");
+}
+
+.big-flask-style-2 {
+    background-image: url("../img/bigFlask2.png");
+}
+
+.big-flask-style-3 {
+    background-image: url("../img/bigFlask3.png");
+}
+
+.big-flask-style-4 {
+    background-image: url("../img/bigFlask4.png");
+}
+
+.big-flask-style-5 {
+    background-image: url("../img/bigFlask5.png");
+}
+
+/* 3 экран */
+
+.microscope {
+    background-image: url("../img/microscope.png");
+    width: 36.04vw;
+    height: 52.29vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 7.41%;
+    left: 57.395%;
+    z-index: 2;
+}
+
+.jar {
+    background-image: url("../img/jar.png");
+    width: 12.6vw;
+    height: 17.86vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 57.96%;
+    left: 38.91%;
+    z-index: 2;
+    cursor: url("../img/pipette.png") 71 60, pointer;
+}
+
+.final-big-flask {
+    background-image: url("../img/bigFlask5.png");
+    width: 23.75vw;
+    height: 37.45vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 25%;
+    left: 7%;
+    z-index: 2;
+}
+
+.smoke {
+    display: none;
+    background-image: url("../img/smoke.png");
+    width: 18.33vw;
+    height: 36.04vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 3%;
+    left: 9.6%;
+    z-index: 1;
+}
+
+.arrow-right {
+    background-image: url("../img/arrowRight.png");
+    width: 32.92vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 25%;
+    left: 28%;
+    z-index: 0;
+    display: none;
+}
+
+.arrow-left {
+    background-image: url("../img/arrowLeft.png");
+    width: 11.61vw;
+    height: 7.19vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 42%;
+    left: 29%;
+    z-index: 0;
+    display: none;
+}
+
+/* 4 экран */
+
+.spinner1 {
+    background-image: url("../img/spinner1.png");
+    width: 27.34vw;
+    height: 29.53vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 43.89%;
+    left: 9.27%;
+    z-index: 2;
+}
+
+.spinner2 {
+    background-image: url("../img/spinner2.png");
+    width: 13.38vw;
+    height: 17vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 8.89%;
+    left: 19.01%;
+    z-index: 2;
+}
+
+.spinner3 {
+    background-image: url("../img/spinner3.png");
+    width: 15.89vw;
+    height: 14.69vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 0;
+    left: 51.72%;
+    z-index: 2;
+}
+
+.spinner4 {
+    background-image: url("../img/spinner4.png");
+    width: 19.95vw;
+    height: 22vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 23.8%;
+    left: 67.55%;
+    z-index: 2;
+}
+
+.spinner5 {
+    background-image: url("../img/spinner5.png");
+    width: 20vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 65.65%;
+    left: 46.67%;
+    z-index: 2;
+}
+
+.sign {
+    background-image: url("../img/sign.png");
+    width: 42.86vw;
+    height: 7.66vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top: 85%;
+    left: 30.26%;
+    z-index: 0;
+}
+
+/* Заглушка */
+
+.mock{
+    position:fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(141, 125, 106);
+    background-image: url("../img/mock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+
 
 

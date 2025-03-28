@@ -1,0 +1,5 @@
+@media screen and (orientation: portrait) {
+    .mock {
+        display: block;
+    }
+}
