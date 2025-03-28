@@ -200,8 +200,7 @@ plate.onmousedown = () => {
 }
 
 let finalBigFlaskOnClickHandler = () => {
-    let finalBigFlaskOriginalCursor = finalBigFlask.style.cursor;
-    finalBigFlask.style.cursor = 'unset';
+
     screen3.style.cursor = 'url("../img/pinkDrop.png") 27 46, move';
     arrowRight.style.display = 'block';
     finalBigFlask.onclick = null;
@@ -215,7 +214,7 @@ let finalBigFlaskOnClickHandler = () => {
                         + parallaxContainer.scrollTop, 2);
                 }, 300);
             } else {
-                finalBigFlask.style.cursor = finalBigFlaskOriginalCursor;
+                finalBigFlask.classList.remove('big-flask-with-pipette');
                 finalBigFlask.onclick = finalBigFlaskOnClickHandler;
             }
             arrowRight.style.display = 'none';
@@ -236,7 +235,7 @@ jar.onclick = function jarOnClickHandler() {
             let elementBelow = document.elementFromPoint(event.clientX, event.clientY);
             if (elementBelow === finalBigFlask) {
                 jar.onclick = null;
-                finalBigFlask.style.cursor = 'url("../img/pipette.png") 71 60, pointer';
+                finalBigFlask.classList.add('big-flask-with-pipette');
                 finalBigFlask.onclick = finalBigFlaskOnClickHandler;
                 smoke.style.display = 'block';
             } else {

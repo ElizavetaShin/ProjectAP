@@ -309,6 +309,10 @@
     position: relative;
 }
 
+.screen2-spoon-full {
+    cursor: url("../img/spoonFull.png") 19 35, pointer;
+}
+
 .screen3{
     background-image: url('../img/background3.png') ;
     background-repeat: no-repeat;
@@ -316,6 +320,14 @@
     width: 100vw;
     height: 56.25vw;
     position: relative;
+}
+
+.screen3-green-drop {
+    cursor: url("../img/greenDrop.png") 27 46, move;
+}
+
+.screen3-pink-drop {
+    cursor: url("../img/pinkDrop.png") 27 46, move;
 }
 
 .screen4{
@@ -353,7 +365,6 @@
 .popup{
     width: 46.6vw; 
     height: 27.2vw;
-    background-image: url('../img/popup1.png');
     position: absolute;
     left: 50%;
     top: 50%;
@@ -362,6 +373,21 @@
     background-repeat: no-repeat;
 }
 
+.popup-1 {
+    background-image: url('../img/popup1.png');
+}
+
+.popup-2 {
+    background-image: url('../img/popup2.png');
+}
+
+.popup-3 {
+    background-image: url('../img/popup3.png');
+}
+
+.popup-4 {
+    background-image: url('../img/popup4.png');
+}
 
 .popup-close-button{
     background-image: url('../img/close-button.png');
@@ -466,12 +492,20 @@
     z-index: 2;
 }
 
+.plate-with-spoon {
+    cursor: url("../img/spoonEmpty.png") 19 35, pointer;
+}
+
 .plate-area {
     position: absolute;
     width: 36vw;
     height: 21vw;
     left: 0;
     bottom: 0;
+}
+
+.plate-area-with-spoon {
+    cursor: url("../img/spoonEmpty.png") 19 35, pointer;
 }
 
 .big-flask {
@@ -483,6 +517,10 @@
     top: 25.28%;
     left: 39%;
     z-index: 2;
+}
+
+.big-flask-with-pipette {
+    cursor: url("../img/pipette.png") 71 60, pointer;
 }
 
 .big-flask-style-0 {
