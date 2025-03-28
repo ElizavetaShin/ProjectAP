@@ -42,7 +42,10 @@ popup.addEventListener('click', (event) => {
 let hintButtonArr = [hintButton1, hintButton2, hintButton3, hintButton4];
 hintButtonArr.forEach((item,index) => {
     item.addEventListener('click', () => {
-        popup.style.backgroundImage = `url('../img/popup${index+1}.png')`;
+        for (let i = 1; i <= 4; i++) {
+            popup.classList.remove(`popup-${i}`);
+        }
+        popup.classList.add(`popup-${index + 1}`);
         popupBackground.style.display = 'block';
     })
 })
@@ -66,10 +69,12 @@ let scrollDownToCoord = (coordY, animationDuration) => {
 
 let handleIngredientsAmount = (ingredientsAmount) => {
     if (ingredientsAmount >= 4) {
-        plate.style.cursor = 'url("../img/spoonEmpty.png") 19 35, pointer';
-        plateArea.style.cursor = 'url("../img/spoonEmpty.png") 19 35, pointer';
+        plate.classList.add('plate-with-spoon');
+        plateArea.classList.add("plate-area-with-spoon");
     }
     if (ingredientsAmount >= 5) {
+        plate.classList.remove('plate-with-spoon');
+        plateArea.classList.remove('plate-area-with-spoon');
         setTimeout(() => {
             scrollDownToCoord(screen3.getBoundingClientRect().top
                 + parallaxContainer.scrollTop, 2);
@@ -173,12 +178,9 @@ draggables.forEach((item) => {
 plate.onmousedown = () => {
     if (ingredientsAdded < 4) return;
 
-    let plateOriginalCursor = plate.style.cursor;
-    let plateAreaOriginalCursor = plateArea.style.cursor;
-
-    plate.style.cursor = 'unset';
-    plateArea.style.cursor = 'unset';
-    screen2.style.cursor = 'url("../img/spoonFull.png") 19 35, pointer';
+    plate.classList.remove("plate-with-spoon");
+    plateArea.classList.remove("plate-area-with-spoon");
+    screen2.classList.add("screen2-spoon-full");
 
     screen2.onmouseup = (e) => {
         let elementBelow = document.elementFromPoint(e.clientX, e.clientY);
@@ -189,19 +191,18 @@ plate.onmousedown = () => {
             plate.onmousedown = null;
             handleIngredientsAmount(ingredientsAdded);
         } else {
-            plate.style.cursor = plateOriginalCursor;
-            plateArea.style.cursor = plateAreaOriginalCursor;
+            plate.classList.add("plate-with-spoon");
+            plateArea.classList.add("plate-area-with-spoon");
         }
 
         screen2.onmouseup = null;
-        screen2.style.cursor = 'unset';
+        screen2.classList.remove("screen2-spoon-full");
     }
-
 }
 
 let finalBigFlaskOnClickHandler = () => {
-
-    screen3.style.cursor = 'url("../img/pinkDrop.png") 27 46, move';
+    finalBigFlask.classList.remove("big-flask-with-pipette");
+    screen3.classList.add("screen3-pink-drop");
     arrowRight.style.display = 'block';
     finalBigFlask.onclick = null;
     setTimeout(() => {
@@ -214,12 +215,12 @@ let finalBigFlaskOnClickHandler = () => {
                         + parallaxContainer.scrollTop, 2);
                 }, 300);
             } else {
-                finalBigFlask.classList.remove('big-flask-with-pipette');
+                finalBigFlask.classList.add("big-flask-with-pipette");
                 finalBigFlask.onclick = finalBigFlaskOnClickHandler;
             }
             arrowRight.style.display = 'none';
             screen3.onclick = null;
-            screen3.style.cursor = 'unset';
+            screen3.classList.remove("screen3-pink-drop");
         }
     }, 0);
 }
@@ -227,7 +228,7 @@ let finalBigFlaskOnClickHandler = () => {
 jar.onclick = function jarOnClickHandler() {
     let jarOriginalCursor = jar.style.cursor;
     jar.style.cursor = 'unset';
-    screen3.style.cursor = 'url("../img/greenDrop.png") 27 46, move';
+    screen3.classList.add("screen3-green-drop");
     arrowLeft.style.display = 'block';
     jar.onclick = null;
     setTimeout(() => {
@@ -235,7 +236,7 @@ jar.onclick = function jarOnClickHandler() {
             let elementBelow = document.elementFromPoint(event.clientX, event.clientY);
             if (elementBelow === finalBigFlask) {
                 jar.onclick = null;
-                finalBigFlask.classList.add('big-flask-with-pipette');
+                finalBigFlask.classList.add("big-flask-with-pipette");
                 finalBigFlask.onclick = finalBigFlaskOnClickHandler;
                 smoke.style.display = 'block';
             } else {
@@ -245,7 +246,7 @@ jar.onclick = function jarOnClickHandler() {
 
             arrowLeft.style.display = 'none';
             screen3.onclick = null;
-            screen3.style.cursor = 'unset';
+            screen3.classList.remove("screen3-green-drop");
         }
     }, 0);
 }
